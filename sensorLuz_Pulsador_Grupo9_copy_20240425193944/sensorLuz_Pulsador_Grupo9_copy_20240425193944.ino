@@ -5,7 +5,6 @@ BH1750 lightMeter;
 
 #define PULSADOR_PIN 14 //Antes5
 #define LED_VERDE_PIN 0
-#define LED_ROJO_PIN 13
 //Sensor luz conectado a D1 (SCL) y D2 (SDA)
 
 int contadorPulsos = 0;
@@ -18,7 +17,6 @@ int begin = 0;
 void setup() {
   pinMode(PULSADOR_PIN, INPUT_PULLUP); //INPUT_PULLUP
   pinMode(LED_VERDE_PIN, OUTPUT);
-  pinMode(LED_ROJO_PIN, OUTPUT);
 
   apagarLeds();
 
